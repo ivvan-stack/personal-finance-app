@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import images from "../../assets/img/images";
+import images from "../../Assets/img/images";
+import { Link } from "react-router-dom"
 
 class Header extends Component {
   constructor(props) {
@@ -9,19 +10,19 @@ class Header extends Component {
   render() {
     return (
       <nav
-        className="navbar is-fixed-top is-danger"
+        className="navbar is-fixed-top is-dark"
         role="navigation"
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <a className="navbar-item" href="/">
+          <Link className="navbar-item" to="/">
             <img className="" src={images.icon} />
             <div className="navbar-title">
               <div className="navbar-item">
                 <h1 className="title">Personal Finance App</h1>
               </div>
             </div>
-          </a>
+          </Link>
           <a
             role="button"
             className="navbar-burger"
@@ -36,15 +37,15 @@ class Header extends Component {
         </div>
         <div id="navbar" className="navbar-menu">
           <div className="navbar-start">
-            <a className="navbar-item">+ Agregar cuentas</a>
+            <Link className="navbar-item" to="/add-accounts">+ Agregar cuentas</Link>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">Revisar</a>
               <div className="navbar-dropdown">
-                <a className="navbar-item">Ingresos</a>
-                <a className="navbar-item">Gastos</a>
-                <a className="navbar-item">Transferencias</a>
+                <Link className="navbar-item" to="/ingresos">Ingresos</Link>
+                <Link className="navbar-item" to="/gastos">Gastos</Link>
+                <Link className="navbar-item" to="/transferencias">Transferencias</Link>
                 <hr className="navbar-divider" />
-                <a className="navbar-item">Ver gráficas</a>
+                <Link className="navbar-item" to="/graphics">Ver gráficas</Link>
               </div>
             </div>
           </div>
