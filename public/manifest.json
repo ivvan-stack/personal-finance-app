@@ -15,12 +15,12 @@
     {
       "src": "assets/brand-icon.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "113x113"
     },
     {
       "src": "assets/brand-logo.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "5615x2567"
     }
   ]
 }
