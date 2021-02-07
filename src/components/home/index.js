@@ -3,7 +3,11 @@ import { useQuery } from "@apollo/client"
 import { ALL_CHARACTERS } from "../../GraphQL/Queries"
 
 export const Home = () => {
-  const { data, loading, error } = useQuery(ALL_CHARACTERS);
+  let id = '4ULxq_Bp0RY'
+  /* const { data, loading, error } = useQuery(ALL_CHARACTERS, {
+    variables: {id}
+  }) */
+  const { data, loading, error } = useQuery(ALL_CHARACTERS)
   if (loading) {
     return (
       <progress className="progress is-large is-info" max={100}>
@@ -26,9 +30,9 @@ export const Home = () => {
     const characters = data.characters.results;
     console.log(characters)
     return (
-      <div className="Home">
+      <div className="Home re-cien">
         <div className="grid">
-          {characters.map((character, index)=>(
+          {characters.map((character)=>(
             <div className="col-3_md-6_sm-12" key={character.id}>
               <div className="card">
                 <div className="card-image">
@@ -45,12 +49,11 @@ export const Home = () => {
                     </div>
                     <div className="media-content">
                       <p className="title is-4">{character.name}</p>
-                      <p className="subtitle is-6">{character.gender}</p>
+                      <p className="subtitle is-6">{character.status}</p>
                     </div>
                   </div>
                   <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    {character.species} <a>@bulmaio</a>.
                     <a href="#">#css</a> <a href="#">#responsive</a>
                     <br />
                     <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>

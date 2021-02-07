@@ -1,7 +1,7 @@
 {
-  "name": "Personal Finance App",
-  "short_name": "PFApp",
-  "description": "It aims to facilitate money management on a personal level and help understand how to improve the user's financial situation, it also has a section where there is specific information on financial education.",
+  "name": "Rick and Morty",
+  "short_name": "R&M",
+  "description": "This app is a memory game with a theme that is based on characters from the popular American adult animated television series, Rick and Morty.",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",

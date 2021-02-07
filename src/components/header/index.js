@@ -28,7 +28,7 @@ class Header extends Component {
             className="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
-            data-target="navbarBasicExample"
+            data-target="navbar"
           >
             <span aria-hidden="true" />
             <span aria-hidden="true" />
