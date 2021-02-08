@@ -1,8 +1,27 @@
 .memory-card {
+    position: relative;
     cursor: pointer;
+    background-color: $c-primary;
     .card-image {
         &:hover, &:active {
             filter: grayscale(100%);
+        }
+    }
+    &-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: rem(40);
+        color: $c-invalid;
+        @include flexbox($ai: center, $jc: center);
+        @include mediaBetween(md, lg){
+            font-size: rem(90);
+        }
+        @include mediaFrom(lg){
+            font-size: rem(120);
         }
     }
 }

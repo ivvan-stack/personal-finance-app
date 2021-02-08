@@ -25,7 +25,7 @@ const BuildDeck = ()=> {
       const card = {
         id: character.id,
         image: character.image,
-        fueAdivinada: false
+        wasGuessed: false
       }
       cards.push(card)
       cards.push({ ...card })
@@ -34,15 +34,4 @@ const BuildDeck = ()=> {
   }
 }
 
-export default BuildDeck
-
-/* while (characters.lenght < maxCharacters) {
-  const index = Math.floor(Math.random() * characters.lenght);
-  const card = {
-    id: character.id,
-    icono: character.image.splice(index, 1)[0],
-    fueAdivinada: false
-  };
-  cards.push(card);
-  cards.push({ ...card });
-} */
+export default BuildDeck;
