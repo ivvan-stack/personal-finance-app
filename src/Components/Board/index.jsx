@@ -6,13 +6,11 @@ class Board extends Component {
     const cards = this.props.cards
     console.log(cards);
     return (
-        <div className="grid re-central">
-          {cards
-            .map((card, index) => {
-              <Card key={index} id={card.id} image={card.image}/>
-            })
-          }
-        </div>
+      <div className="grid re-central">
+        {cards.map((card, index) =>
+          <Card key={index} id={card.id} image={card.image} />
+        )}
+      </div>
     )
   }
 }

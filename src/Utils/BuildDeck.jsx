@@ -21,7 +21,7 @@ const BuildDeck = ()=> {
   } else if (data) {
     const characters = data.characters.results
     let cards = []
-    characters.slice(0, -10).forEach((character)=>{
+    characters.slice(0, -14).forEach((character)=>{
       const card = {
         id: character.id,
         image: character.image,
