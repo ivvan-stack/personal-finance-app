@@ -17,7 +17,7 @@
     margin-right: auto;
 }
 .re-central,
-.re-middle,{
+.re-middle{
     @include horizontal-center-auto;
     @include mediaTo(md){
         @include padding-h;
@@ -29,6 +29,7 @@
     &--small,
     &--medium,
     &--big{
+        @include margin-v(20);
         @include horizontal-center-auto;
     }
     &,
@@ -38,6 +39,17 @@
         @include re-central-width;
         @include mediaTo(md){
             @include padding-h;
+        }
+    }
+    &,
+    &--small,
+    &--medium,
+    &--big{
+        &.full {
+            height: 100vh;
+            &-center {
+                @include flexbox($fd: column, $fw: nowrap, $jc: center);
+            }
         }
     }
     @at-root

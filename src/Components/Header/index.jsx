@@ -19,7 +19,7 @@ class Header extends Component {
             <img className="" src={images.icon} />
             <div className="navbar-title">
               <div className="navbar-item">
-                <h1 className="title">Personal Finance App</h1>
+                <h1 className="title">Rick and Morty Game</h1>
               </div>
             </div>
           </Link>
@@ -37,28 +37,19 @@ class Header extends Component {
         </div>
         <div id="navbar" className="navbar-menu">
           <div className="navbar-start">
-            <Link className="navbar-item" to="/add-accounts">+ Agregar cuentas</Link>
-            <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">Revisar</a>
-              <div className="navbar-dropdown">
-                <Link className="navbar-item" to="/ingresos">Ingresos</Link>
-                <Link className="navbar-item" to="/gastos">Gastos</Link>
-                <Link className="navbar-item" to="/transferencias">Transferencias</Link>
-                <hr className="navbar-divider" />
-                <Link className="navbar-item" to="/graphics">Ver gráficas</Link>
+            <Link className="navbar-item" to="/basico">¿Qué es esto?</Link>
+            <Link className="navbar-item" to="/por-tiempo">¿Cómo jugar?</Link>
+            <Link className="navbar-item" to="/por-limites">Beneficios de jugar</Link>
+          </div>
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <div className="buttons">
+                <a className="button button-lineal small white" href="https://github.com/ivvan-stack/rick-and-morty">
+                  <small>Acerca de</small>
+                </a>
               </div>
             </div>
           </div>
-          {/* <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                <a className="button is-primary">
-                  <strong>Registrate</strong>
-                </a>
-                <a className="button is-light">Inicia sesión</a>
-              </div>
-            </div>
-          </div> */}
         </div>
       </nav>
     );
