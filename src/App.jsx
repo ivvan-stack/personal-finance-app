@@ -6,6 +6,7 @@ import {
 } from "react-router-dom"
 import Home from "./Components/Home"
 import Header from "./Components/Header"
+import Aside from "./Components/Aside"
 
 export const App = () => {
   return(
@@ -13,7 +14,12 @@ export const App = () => {
       <Header/>
       <Switch>
         <Route path="/" exact>
-          <Home/>
+          <div className="grid">
+            <Aside/>
+            <div className="col-10_md-12_sm-12">
+              <Home/>
+            </div>
+          </div>
         </Route>
         <Route path="/loco" exact>
           <p>Loco</p>

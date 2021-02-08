@@ -42,8 +42,10 @@ $is-debugging: false;
 @import "_components/video-responsive";
 @import "_components/monster-banner";
 @import "_components/slider-main";
+@import "_components/memory-cards";
 
 // Modules - Estilos para módulos re-utilizables
+@import "_modules/memory-game";
 
 // Utilities
 @import "_utilities/re-utilities";

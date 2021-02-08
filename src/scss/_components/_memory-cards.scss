@@ -1,0 +1,8 @@
+.memory-card {
+    cursor: pointer;
+    .card-image {
+        &:hover, &:active {
+            filter: grayscale(100%);
+        }
+    }
+}
