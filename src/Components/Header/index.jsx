@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import images from "../../Assets/img/images";
+import images from "../../assets/img/images";
 import { Link } from "react-router-dom"
 
 class Header extends Component {
@@ -15,7 +15,7 @@ class Header extends Component {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <Link className="navbar-item" to="/">
+          <Link className="navbar-item" to="/rick-and-morty">
             <img className="" src={images.icon} />
             <div className="navbar-title">
               <div className="navbar-item">

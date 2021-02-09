@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import gameOver from '../../Assets/img/images'
+import gameOver from '../../assets/img/images'
 
 class Modal extends Component {
   constructor(props) {

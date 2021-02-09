@@ -33,7 +33,7 @@ const App = () => {
       <Router>
       <Header/>
       <Switch>
-        <Route path="/" exact>
+        <Route path="/rick-and-morty" exact>
           <Board cards={cards} />
         </Route>
         <Route path="/whats" exact>
