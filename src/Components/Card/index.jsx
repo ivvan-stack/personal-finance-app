@@ -20,7 +20,7 @@ class Card extends Component {
               <div className="card memory-card">
                   <div className="card-image" onClick={this.handleClick}>
                       <figure className="image is-4by3">
-                        <h1 className="memory-card-title">?</h1>
+                        <h1 className="memory-card-title outlined">?</h1>
                       </figure>
                   </div>
               </div>

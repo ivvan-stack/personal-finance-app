@@ -26,7 +26,7 @@ class Header extends Component {
             <img className="" src={images.icon} />
             <div className="navbar-title">
               <div className="navbar-item">
-                <h1 className="title">Rick and Morty Game</h1>
+                <h1 className="title outlined">Rick and Morty Game</h1>
               </div>
             </div>
           </Link>
