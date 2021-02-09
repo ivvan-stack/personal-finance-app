@@ -37,14 +37,14 @@ class Header extends Component {
         </div>
         <div id="navbar" className="navbar-menu">
           <div className="navbar-start">
-            <Link className="navbar-item" to="/basico">¿Qué es esto?</Link>
-            <Link className="navbar-item" to="/por-tiempo">¿Cómo jugar?</Link>
-            <Link className="navbar-item" to="/por-limites">Beneficios de jugar</Link>
+            <Link className="navbar-item" to="/whats">¿Qué es esto?</Link>
+            <Link className="navbar-item" to="/how">¿Cómo jugar?</Link>
+            <Link className="navbar-item" to="/why">Beneficios de jugar</Link>
           </div>
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
-                <a className="button button-lineal small white" href="https://github.com/ivvan-stack/rick-and-morty">
+                <a className="button button-lineal small white" target="_blank" href="https://github.com/ivvan-stack/rick-and-morty">
                   <small>Acerca de</small>
                 </a>
               </div>
