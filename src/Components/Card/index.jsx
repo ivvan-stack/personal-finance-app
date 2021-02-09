@@ -15,8 +15,8 @@ class Card extends Component {
   }
   render() {
     return (
-      <div className="col-3_md-3_sm-3" onClick={this.props.selectCard}>
-        <ReactCardFlip isFlipped={this.state.isFlipped || this.props.wasGuessed} flipDirection="vertical">
+      <div className="col-3_md-3_sm-4" onClick={this.props.selectCard}>
+        <ReactCardFlip isFlipped={this.props.isComparing || this.props.wasGuessed} disabled={true} flipDirection="horizontal">
               <div className="card memory-card">
                   <div className="card-image" onClick={this.handleClick}>
                       <figure className="image is-4by3">

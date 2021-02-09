@@ -1,23 +1,14 @@
-import React from "react";
 import shuffle from "lodash.shuffle";
 import { ALL_CHARACTERS } from "../GraphQL/Queries";
 import { useQuery } from "@apollo/client";
-import Loading from "../Components/Loading";
-import Error from "../Components/Error";
-
-//const maxCharacters = 20;
 
 const BuildDeck = ()=> {
   const { data, loading, error } = useQuery(ALL_CHARACTERS);
 
   if (loading) {
-    return (
-      <Loading />
-    );
+    return 'loading'
   } else if (error) {
-    return (
-      <Error />
-    );
+    return 'error'
   } else if (data) {
     const characters = data.characters.results
     let cards = []
